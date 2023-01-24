@@ -1,31 +1,57 @@
 clsversion: "3.1"
 
 nlu:
-
-- entities:
-  - nombre
-  - apellido
-  - correo
-  - numero_telefono
-  - numero_pedido
-  - hora
-  - fecha
-  - presupuesto
-
 #entrenamiento para reconocer entidades
 
 - intent: informacion_contacto_cliente
-- mi nombre es [Pablo](nombre) [Palacios](apellido)
-- me llamo [Pablo](nombre) [Palacios](apellido)
-- soy [Pablo](nombre) [Palacios](apellido)
-- mi correo es [ppalacios500@gmail.com](correo)
-- mi numero de telefono es [61541114](numero_telefono)
-- mi nombre es [Andrea](nombre) [Moscarella](apellido)
-- me llamo [Andrea](nombre) [Moscarella](apellido)
-- soy [Andrea](nombre) [Moscarella](apellido)
-- mi correo es [andrea@gmail.com](correo)
-- mi numero de telefono es [61123432432](numero_telefono)
+  examples: |
+    - mi nombre es [Pablo](nombre) [Palacios](apellido)
+    - me llamo [Pablo](nombre) [Palacios](apellido)
+    - soy [Pablo](nombre) [Palacios](apellido)
+    - mi correo es [ppalacios500@gmail.com](correo)
+    - mi numero de telefono es [61541114](numero_telefono)
+    - mi nombre es [Andrea](nombre) [Moscarella](apellido)
+    - me llamo [Andrea](nombre) [Moscarella](apellido)
+    - soy [Andrea](nombre) [Moscarella](apellido)
+    - mi correo es [andrea@gmail.com](correo)
+    - mi numero de telefono es [61123432432](numero_telefono)
+    - mi nombre es [jose](nombre) [Sanchez](apellido)
+    - me llamo [jose](nombre) [Sanchez](apellido)
+    - soy [jose](nombre) [Sanchez](apellido)
+    - mi correo es [jose@gmail.com](correo)
+    - mi numero de telefono es [41542041](numero_telefono)
+    - mi nombre es [juan](nombre) [mendoza](apellido)
+    - me llamo [juan](nombre) [mendoza]](apellido)
+    - soy [juan](nombre) [mendoza](apellido)
+    - mi correo es [jose@gmail.com](correo)
+    - mi numero de telefono es [6941212121](numero_telefono)
+    - mi nombre es [daniel](nombre) [morales](apellido)
+    - me llamo [daniel](nombre) [morales]](apellido)
+    - soy [daniel](nombre) [morales](apellido)
+    - mi correo es [daniel@gmail.com](correo)
+    - mi numero de telefono es [61412837](numero_telefono)
 
+- intent: informacion_pedido
+  examples: |
+    - El numero de mi pedido es [12345](numero_pedido)
+    - El numero es [12345](numero_pedido)
+    - Quiero programar una entrega para el [15 de febrero](fecha) a las [2pm](hora)
+    - a las [2pm](hora)
+
+- intent: informacion_presupuesto
+  examples: |
+    - tengo un presupuesto base de [$5000](presupuesto)
+    - tengo [$5000](presupuesto)
+
+- intent: direccion_info
+  examples: |
+    - Mi direccion es [Calle 10, casa 44](direccion)
+    - vivo en [Calle 10, casa 44](direccion)
+    - resido en [Calle 10, casa 44](direccion)
+    - envielo a [Calle 10, casa 44](direccion)
+    - mandelo a [Calle 10, casa 44](direccion)
+    - envielo a este lugar [Calle 10, casa 44](direccion)
+    - envielo a esta residencia [Calle 10, casa 44](direccion)
 
 #termina datos de entrenamiento para reconcer entidades
 
@@ -44,100 +70,6 @@ nlu:
     - wola
     - ola
  
-- intent: goodbye
-  examples: |
-    - adios
-    - hast luego
-    - hasta pronto
-    - hasta mañana
-    - hasta mas tarde
-    - nos vemos
-    - nos vemos pronto
-    - adios adios
-    - bye bye
-    - chao
-    - chiao
-    - ahi te ves
-
-- intent: affirm
-  examples: |
-    - si
-    - sisi
-    - yep
-    - yup
-    - por supuesto
-    - de acuerdo
-    - claro
-    - obvio
-    - claro que si
-    - suena bien
-    - me gusta
-    - me encanta
-    - lo adoro
-    - correcto
-    - s
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - para nada
-    - nunca
-    - jamas
-    - no lo creo
-    - no pienso eso
-    - no me gusta esto
-    - no quiero esto
-    - lo dudo
-    - ni idea
-    - no realmente
-    - incorrecto
-    - nope
-    - nono
-
-
-- intent: mood_great
-  examples: |
-    - perfecto
-    - grandioso
-    - fabuloso
-    - asombroso
-    - me siento genial
-    - me siento como un rey
-    - me siento grandioso
-    - me siento fabuloso
-    - magnifico
-    - me siento muy bien 
-    - voy a salvar el mundo
-    - demasiado bien
-    - muy muy buenos
-    - muy muy perfecto
-
-- intent: mood_unhappy
-  examples: |
-    - mi dia es horrible
-    - estoy triste
-    - no me siento muy bien
-    - estoy decepcionado
-    - estoy acabado
-    - estoy deshecho
-    - no estoy bien
-
-- intent: bot_challenge
-  examples: |
-    - eres un bot?
-    - eres un robot?
-    - eres un chatbot?
-    - que eres?
-    - que se supone que eres?
-    - eres humano?
-    - estoy hablando con un robot?
-    - estoy hablando con un humano?
-    - estas vivo?
-    - puedes estar vivo?
-
-#INTENCIONES PARA COTIZACIÓN DE PRESUPUESTO
-
 - intent: realizar_cotizacion  
   examples: |
     - quiero hacer una cotización
@@ -150,30 +82,127 @@ nlu:
     - quiero contratar
     - quiero un presupuesto
 
-- intent: descuento_cotizacion 
+- intent: producto_cotizacion
   examples: |
-    - ¿hay descuento?
-    - ¿podria salir más barato?
-    - ¿hay algun descuento disponible?
-    - ¿podria tener un descuento para la cotización?
-    - ¿donde adquiero un descuento?
-    - descuento
-    - barato
-    - mas barato
+    - necesito contratar servicio con el producto 1
+    - necesito contratar servicio con el producto 2
+    - necesito contratar servicio con el producto 3
+    - estoy interesado en el servicio de producto 1
+    - estoy interesado en el servicio de producto 2
+    - estoy interesado en el servicio de producto 3
+    - me gustaria los servicios de producto 1
+    - me gustaria los servicios de producto 2
+    - me gustaria los servicios de producto 3
+    - servicio de producto 1
+    - servicio de producto 2
+    - servicio de producto 3
+    - quiero un producto 1
+    - quiero un producto 2
+    - quiero un producto 3
+    - quiero producto 1
+    - quiero producto 2
+    - quiero producto 3
+    - producto 1
+    - producto 2
+    - producto 3
 
-- intent: metodo_pago_cotización
+- intent: cotizacion_metodo_pago
   examples: |
-    - ¿que metodos manejan para realizar los pagos?
-    - ¿como pago?
-    - ¿como cobran?
-    - ¿cobran ITBMS?
-    - ¿aceptan tarjetas de credito visa mastercard?
-    - ¿trabajan con transferencias bancarias?
-    - ¿reciben efectivo?
-    - quiero pagar todo en efectivo
     - quiero pagar todo con tarjeta de credito
     - quiero pagar todo con clave
+    - quiero pagar con clave
+    - quiero pagar con visa
+    - quiero pagar con american xpress
+    - quiero pagar con mastercard
+    - quiero pagar con Transferencias
+    - hare Transferencia
 
 - intent: servicio_enviopaquetes
   examples: |
-   - ¿que tipo de envio ofrecen?
+   - ¿cuentan con servicio de envio de paquetes?
+   - ¿ofrecen envio de paquetes?
+   - ¿tienen servicio de envio de paquetes?
+
+
+- intent: tiposervicio_enviopaquetes
+  examples: |
+    - ¿que tipo de servicio de  envio de paquetes  tienen?
+    - ¿con que tipo de servicio de envio cuentan?
+    - ¿cuales son los tipo de servicio que ofrecen?
+
+- intent: informacion_de_envio
+  examples: |
+   - hacia panama con 100 libras y  30 metros cubicos
+   - hacia panama con 12 libras y  50 metros cubicos
+   - hacia panama con 200 libras y  21 metros cubicos
+   - hacia costa rica con 3450 libras y  23 metros cubicos
+   - hacia venezuela con 1200 libras y  432 metros cubicos
+   - hacia colombia con 1030 libras y  53 metros cubicos
+   - hacia peru con 20 libras y  21 metros cubicos
+   - hacia estados unidos con 500 libras y  500 metros cubicos
+   
+- intent: confirmacion_costoenvios
+  examples: |
+   - Si
+   - Confirmado
+   - confirmo
+   - okay
+   - listo
+
+- intent: estado_del_envio
+  examples: |
+   - ¿puedo saber cual es el tiempo de entrega?
+   - ¿cual es mi numero de segimiento?
+   - ¿cual es mi fecha de entrega?
+
+## INTENTS CITAS DE ASESORIAS
+
+- intent: agendar_citas
+  examples: |
+    - quiero cita
+    - si cita
+    - si
+    - ¿Podemos agendar una cita?
+    - Me gustaria agendar una cita
+    - ¿Me puede decir que servicios manejan?
+    - ¿Tiene disponibilidad?
+    - ¿Tiene espacio en su agenda?
+    - Me gustarpia tener una cita
+    - ¿Podemos acordar una reunión?
+    - Quiero poder explicarle bien mi proyecyo
+    - Me gustaria brindarle más información de mi proyecyo
+    - ¿Podemos acordar un día para reunirnos?
+    - Estoy interesado en saber más
+    - Preferiría reunirnos para darle más detalles
+    - ¿Podemos reunirnos para darle los detalles?
+
+
+- intent: fecha_citas
+  examples: |
+    - horario 1
+    - horario 2
+    - horario 3
+
+
+- intent: confirmar_fecha_citas
+  examples: |
+    - Si
+    - de acuerdo
+    - okay
+    - ok
+    - vale
+    - acepto
+    - confirmar
+    - confirmo
+    - listo
+
+
+- intent: negacion_fecha_citas
+  examples: |
+    - No necesito mas nada
+    - No
+    - Si
+    - Quisiera algo mas
+    - De acuerdo
+
+

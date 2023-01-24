@@ -1,34 +1,172 @@
 version: "3.1"
 
+slots:
+  nombre:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: nombre
+    influence_conversation: false
+  apellido:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: apellido
+    influence_conversation: false
+  correo:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: correo
+    influence_conversation: false
+  num_tel:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: numero_telefono
+    influence_conversation: false
+  num_pedido:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: numero_pedido
+    influence_conversation: false
+  hora:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: hora
+    influence_conversation: false
+  fecha:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: fecha
+    influence_conversation: false
+  presupuesto:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: presupuesto
+    influence_conversation: false
+  direccion:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: direccion
+    influence_conversation: false
+
+
 intents:
+  - informacion_contacto_cliente
+  - informacion_pedido
+  - informacion_presupuesto
+  - direccion_info
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - realizar_cotizacion
+  - producto_cotizacion
+  - cotizacion_metodo_pago
+  - servicio_enviopaquetes
+  - tiposervicio_enviopaquetes
+  - informacion_de_envio
+  - confirmacion_costoenvios
+  - estado_del_envio
+  - agendar_citas
+  - fecha_citas
+  - confirmar_fecha_citas
+  - negacion_fecha_citas
+
+
+entities:
+  - nombre
+  - apellido
+  - correo
+  - numero_telefono
+  - numero_pedido
+  - hora
+  - fecha
+  - presupuesto
+  - direccion
 
 
 responses:
+  utter_pedir_info:
+  - text: "Porfavor, antes de continuar porfavor proporcioneme su Nombre, Apellido, Correo y Numero de contacto"
+
   utter_greet:
-  - text: "Saludos! Soy tu Chatbot de Servicio al cliente ¿Como puedo ayudarte?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "¿Como puedo ayudarte?"
-
-  utter_happy:
-  - text: "Estoy muy bien!"
+  - text: "Saludos! Soy tu Chatbot de Servicio al cliente"
 
   utter_goodbye:
-  - text: "Adios"
+  - text: "Gracias por preferirnos"
 
-  utter_iamabot:
-  - text: "Realmente soy un bot potenciado por la libreria de codigo abierto RASA."
+  utter_bienvenida_cotizacion:
+  - text: "A continuacion te ayudare con tu cotización"
+
+  utter_realizar_cotizacion:
+  - text: "Genial, tenemos cotizaciones para el producto 1, producto 2 y producto 3, escoja uno"
+
+  utter_producto_cotizacion:
+  - text: "Excelente, hemos recibido tu solicitud y comenzaremos a hacer tu cotización de presupuesto. ¿Que metodo de pago usaras?"
+
+  utter_metodo_pago_cotizacion:
+  - text: "Manejamos cobros mediante visa y tarjeta clave. No aceptamos pagos en cheques o Transferencias de bancos no reconocidos internacionalmente"
+
+  utter_registro_metodo_pago:
+  - text: "Excelente, en breve recibira la informacion para realizar de pago en su correo"
+
+  utter_bienvenida_paquetes:
+  - text: "A continuacion te ayudare con la gestion de tu paquete"
+
+  utter_bienvenida_asesorias:
+  - text: "A Continuacion te ayudare a registrar una asesoria con nuestros colaboradores"
+
+  utter_bienvenida_info_empresa:
+  - text: "¿Que te gustaria saber sobre nosotros?"
+
+  ## RESPUESTAS ENVIO DE PAQUETES
+
+  utter_servicio_enviopaquetes:
+  - text: "Hola, si contamos con el servicio de envio de paquetes"
+
+  utter_tiposervicio_enviopaquetes:
+  - text: "Contamos con todo tipo de envios: envio a domicilio, a un punto de entrega, express, internacional o nacional. Puede realizar su pedido escribiendo hacia donde lo quiere transportar, peso y volumen en metros cúbicos"
+
+  utter_informacion_de_envio:
+  - text: "¡Listo! Información recibida. Sus datos han sido recibidos y se hara una cotizacion. ¿Desea proceder con el envio?"
+
+  utter_confirmacion_costoenvios:
+  - text: "Su envio fue realizado con exito.  ¿desea continuar con el envio?"
+ 
+
+  utter_confirmacion_de_envio:
+  - text: "Excelente, su número de seguimiento es el 02311553. La fecha estimada de entrega puede ser entre 3 a 4 días hábiles"
+
+  utter_estado_del_envio:
+  - text: "Esta en la informacion actualizada el tiempo y la fecha de entrega puede variar por su region., ¿necesita algun otro servicio o ayuda adicional?"
+
+  utter_presentacion_citas:
+   - text: "¡Hola, Bienvenido! Soy un chatbot y estoy preparado para ayudarte.¿ Requieres ayuda para agendar una cita?"
+
+  utter_agendar_citas:
+   - text: "¡Perfecto! podemos recomendarte los siguientes horarios:
+          horario 1) jueves a las 1 pm,
+          horario 2) viernes a las 2pm,
+          horario 3) lunes a las 10am,
+          ¿Cuál deseas elegir?"
+
+  utter_fecha_citas:
+   - text: "¡Bien!, ¿Quieres confirmar esta cita?."
+
+  utter_confirmar_fecha_citas:
+   - text: "¡Enhorabuena! Tu cita ha sido agendada con éxito. Te esperamos el día de la reunión en nuestra sucursal de Via España al horario establecido."
+
+  utter_negacion_fecha_citas:
+   - text: "¿Deseas terminar esta conversación?"
+
+
+actions:
+- utter_preguntar_opcion
+- action_capturar_info_cliente
 
 session_config:
   session_expiration_time: 60

@@ -1,27 +1,31 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
+from rasa_sdk import Action
+from typing import Dict, Any, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+
+class PreguntarOpcion(Action):
+    def name(self):
+        return "utter_preguntar_opcion"
+
+    def run(self, dispatcher, tracker, domain):
+        opciones = "1. Paquetes 2. Asesorias 3. Cotizar 4. Preguntas Frecuentes"
+
+        dispatcher.utter_message("¿Con que necesitas ayuda? {opciones}")
+
+        return []
 
 
-# This is a simple example for a custom action which utters "Hello World!"
+class CapturarInfoCliente(Action):
+    def name(self) -> str:
+        return "action_capturar_info_cliente"
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
+
+    def run(self, dispatcher: CollectingDispatcher,tracker: Tracker, domain: Dict[str, Any]) -> List[Dict[str, Any]]:
+        nombre = tracker.get_slot("nombre")
+        apellido = tracker.get_slot("apellido")
+        correo = tracker.get_slot("correo")
+        num_tel = tracker.get_slot("num_tel")
+        
+        dispatcher.utter_message("Bienvenido {nombre} {apellido}, Su correo es: {correo} y su numero de contacto es: {num_tel}")
+
+        return []
