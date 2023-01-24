@@ -9,37 +9,26 @@ intents:
   - mood_unhappy
   - bot_challenge
 
-entities:
-  - nombre
-  - correo
-  - numero
-  - presupeusto
-  - servicio
-
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Saludos! Soy tu Chatbot de Servicio al cliente ¿Como puedo ayudarte?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "¿Como puedo ayudarte?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Estoy muy bien!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Adios"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  ver_paquete:
-    -text: "su paquete"
-
+  - text: "Realmente soy un bot potenciado por la libreria de codigo abierto RASA."
 
 session_config:
   session_expiration_time: 60

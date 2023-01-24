@@ -1,196 +1,166 @@
 clsversion: "3.1"
 
 nlu:
+
+- entities:
+  - nombre
+  - apellido
+  - correo
+  - numero_telefono
+  - numero_pedido
+  - hora
+  - fecha
+  - presupuesto
+
+#entrenamiento para reconocer entidades
+
+- intent: informacion_contacto_cliente
+- mi nombre es [Pablo](nombre) [Palacios](apellido)
+- me llamo [Pablo](nombre) [Palacios](apellido)
+- soy [Pablo](nombre) [Palacios](apellido)
+- mi correo es [ppalacios500@gmail.com](correo)
+- mi numero de telefono es [61541114](numero_telefono)
+- mi nombre es [Andrea](nombre) [Moscarella](apellido)
+- me llamo [Andrea](nombre) [Moscarella](apellido)
+- soy [Andrea](nombre) [Moscarella](apellido)
+- mi correo es [andrea@gmail.com](correo)
+- mi numero de telefono es [61123432432](numero_telefono)
+
+
+#termina datos de entrenamiento para reconcer entidades
+
+
 - intent: greet
   examples: |
+    - hola
+    - holiwis
     - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
+    - hola carambola
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - que hay?
+    - que tal?
+    - wola
+    - ola
+ 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
+    - adios
+    - hast luego
+    - hasta pronto
+    - hasta mañana
+    - hasta mas tarde
+    - nos vemos
+    - nos vemos pronto
+    - adios adios
     - bye bye
-    - see you late
+    - chao
+    - chiao
+    - ahi te ves
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - si
+    - sisi
+    - yep
+    - yup
+    - por supuesto
+    - de acuerdo
+    - claro
+    - obvio
+    - claro que si
+    - suena bien
+    - me gusta
+    - me encanta
+    - lo adoro
+    - correcto
+    - s
 
 - intent: deny
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - para nada
+    - nunca
+    - jamas
+    - no lo creo
+    - no pienso eso
+    - no me gusta esto
+    - no quiero esto
+    - lo dudo
+    - ni idea
+    - no realmente
+    - incorrecto
+    - nope
+    - nono
+
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfecto
+    - grandioso
+    - fabuloso
+    - asombroso
+    - me siento genial
+    - me siento como un rey
+    - me siento grandioso
+    - me siento fabuloso
+    - magnifico
+    - me siento muy bien 
+    - voy a salvar el mundo
+    - demasiado bien
+    - muy muy buenos
+    - muy muy perfecto
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - mi dia es horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - estoy acabado
+    - estoy deshecho
+    - no estoy bien
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - eres un bot?
+    - eres un robot?
+    - eres un chatbot?
+    - que eres?
+    - que se supone que eres?
+    - eres humano?
+    - estoy hablando con un robot?
+    - estoy hablando con un humano?
+    - estas vivo?
+    - puedes estar vivo?
 
-- intent: revision_paquete
-  examples:
-    - ¿Como esta mi paquete?
-    - ¿Donde esta mi paquete?
+#INTENCIONES PARA COTIZACIÓN DE PRESUPUESTO
 
-- intent: ubicacion_oficinas
-  examples: |
-   - ¿cual es la ubicacion de sus oficinas en centroamerica?
-   - ¿donde estan ubicadas sus oficinas?
-   - ¿como llego a sus oficinas de envio?
-   - ¿donde quedan exactamente sus oficinas?
-   - ¿que horario tienen?
-   - ¿cual es el horario de sus oficinas?
-   - ¿que dia estan abiertos?
-   - ¿que dia no estan abiertos?
-   
-   
-- intent: servicios_envio
-  examples: |
-   - ¿que tipo de envio ofrecen?
-   - ¿cuales son los planes de servicio de envio?
-   - ¿ofrecen envios hacia el interior?
-   - ¿ofrecen envios nacionales?
-   - ¿hacen envios hacia europa?
-   - ¿tienen servicio express?
-   
-   
-- intent: formas_de_pago
-  examples: |
-   - ¿que formas de pago tienen?
-   - ¿cuales son sus formas de pago?
-   - ¿aceptan bancos locales?
-   - ¿tienen yappy?
-   - ¿cuentan con pagos online?
-   - ¿cuentan con algun app de pago?
-    
-    
-- inten: numeros_de_telefono
-  examples: |
-   - ¿cual es su numero principal de telefono?
-   - ¿cual es el numero de sus oficinas en centroamerica?
-   - ¿donde puedo contactar con el departamento de envios?
-   - ¿tienen numero para contactar por whatsapp?
-   - ¿numero de telefono?
-    
-    
-- inten: preguntascotizaciones_envios
-  examples: |
-   - ¿cuales son los precios de los diferentes planes que ofrecen?
-   - ¿cual es el precio del servicio express?
-   - ¿podrian hacerme una cotizacion para un envio?
-   - ¿cual es el precio para un envio hacia europa?
-   - ¿precio de envios nacionales?
-   - ¿precio de envios internacionales?
-   
-   
-- inten: informacion_de_enviopaquetes
-  examples: |
-   - ¿como funciona el envio de paquetes?
-   - ¿como realizo un envio?
-   - ¿donde puedo darle seguimiento a mi envio?
-   - ¿que sucede al no estar presente en el momento de la entrega?
-   - ¿quien lleva los paquetes?
-   - ¿cual es el tiempo estimado del envio?
-   - ¿que datos necesito para realizar el envio?
-   - ¿realizan envios a todas partes del mundo?
-   - ¿se pagan impuestos en las aduanas?
-   - ¿realizan envios a todas partes del mundo?
-   - ¿cual es el horario de atencion al cliente?
-   - ¿que medio de transporte utilizan?
-   - ¿cual es el peso maximo del paquetes?
-   - ¿cual es el peso minimo del paquetes?
-   - ¿cumplen con todas las normas de biosegiridad?
-
-- intent: realizar_cotizacion
+- intent: realizar_cotizacion  
   examples: |
     - quiero hacer una cotización
     - ¿dónde puedo hacer una cotizacion?
     - hacer cotización
     - ¿qué necesito para hacer una cotización?
     - ¿cómo hacer una cotización?
-- intent: concepto_cotizacion
+    - cotizar
+    - contratar
+    - quiero contratar
+    - quiero un presupuesto
+
+- intent: descuento_cotizacion 
   examples: |
-    - ¿qué incluye la cotización?
-    - ¿qué productos incluye la cotización?
-    - ¿qué alcances tiene realizar una cotización?
-- intent: tiempo_cotizacion
-  examples: |
-    - ¿cuánto les tomaría realizar mi cotizacion de presupuesto?
-    - ¿demora mucho mi cotización de presupuesto?
-    - ¿en cuantos días estará listo mi cotización de presupuesto?
-    - ¿de aquí a cuántos días tendre listo mi cotización de presupuesto?
-    - es posible que mi presupuesto esté listo instantaneamente?
-    - necesito hacer mi cotización de presupuesto lo más pronto posible
-- intent: datos_cotización
-  examples: |
-    - ¿donde coloco mis datos para realizar mi cotización de presupuesto?
-    - ¿que información necesitarán de mi para hacer mi cotización de presupuesto?
-    - ¿que datos solicitan para hacer mi cotización de presupuesto?
-    - ¿es necesario dar mi informacion basica para realizar mi cotización de presupuesto?
-    - ¿es seguro compartir mi informacion con ustedes?
+    - ¿hay descuento?
+    - ¿podria salir más barato?
+    - ¿hay algun descuento disponible?
+    - ¿podria tener un descuento para la cotización?
+    - ¿donde adquiero un descuento?
+    - descuento
+    - barato
+    - mas barato
+
 - intent: metodo_pago_cotización
   examples: |
     - ¿que metodos manejan para realizar los pagos?
@@ -203,41 +173,7 @@ nlu:
     - quiero pagar todo en efectivo
     - quiero pagar todo con tarjeta de credito
     - quiero pagar todo con clave
-- intent: politicas_cotización
-  examples: |
-    - ¿cuales son sus politicas al realizar una cotizacion de presupuesto?
-    - ¿que es posible cuando se hace una cotizacion de presupuesto?
-    - ¿que no es viable cuando se hace una cotizacion de presupuesto?
 
-
-- intent: tipo_empresa
+- intent: servicio_enviopaquetes
   examples: |
-    - ¿De qué trata su empresa? 
-    - ¿De qué va la empresa?
-    - ¿Qué tipo de empresa es la empresa SIC?
-- intent: productos_transporte
-  examples: |
-    - ¿Qué tipo de productos transporta?
-    - ¿Qué transporta la empresa? 
-- intent: tiempo_mercado
-  examples: |
-    - ¿Cuántos años en el mercado tienen?
-    - ¿Cuánto tiempo llevan en el mercado? 
-    - ¿Cuántos años de vigencia tienen?
-- intent: colaboradores
-  examples: |
-    - ¿Quiénes son sus colaboradores?
-    - ¿Cuáles son empresas afiliadas a ustedes? 
-- intent: comunicación
-  examples: |
-    - ¿Cuáles son sus vías de comunicación?
-    - ¿Tienen redes sociales?
-    - ¿Cómo me puedo comunicar con ustedes?
-    - ¿Debo llamar para poder comunicarme? 
-    - ¿Cuáles son sus redes sociales?
-
-- intent: servicios_ofrecido
-  examples: |
-    - ¿Cuáles son los diferentes servicios que ofrecen?  
-    - ¿Qué tipo de servicios ofrecen? 
-    - ¿Me puede decir que servicios manejan?
+   - ¿que tipo de envio ofrecen?
