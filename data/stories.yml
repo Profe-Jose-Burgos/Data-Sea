@@ -6,11 +6,11 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_pedir_info
-  - intent: informacion_contacto_cliente
   - action: action_capturar_info_cliente
-  - action: utter_preguntar_opcion
+  - intent: informacion_contacto_cliente
+#  - action: [utter_preguntar_opcion]
 #  - active_loop: cotizacion_presupuesto if opcion == "Cotizar" else None
-# - active_loop: citas_asesoria if opcion == "Asesorias" else None
+#  - active_loop: citas_asesoria if opcion == "Asesorias" else None
 #  - active_loop: envio_paquetes if opcion == "Paquetes" else None
 #  - active_loop: info_general_SIC if opcion == "Preguntas Frecuentes" else None
 
@@ -30,29 +30,16 @@ stories:
   - action: utter_bienvenida_paquetes
   - intent: servicio_enviopaquetes
   - action: utter_servicio_enviopaquetes
-  - intent: tiposervicio_enviopaquetes
-  - action: utter_tiposervicio_enviopaquetes
   - intent: informacion_de_envio
   - action: utter_informacion_de_envio
-  - intent: confirmacion_costoenvios
   - action: utter_confirmacion_de_envio
-  - intent: estado_del_envio
-  - action: utter_estado_del_envio
   - action: utter_goodbye
 
 - story: citas_asesoria
   steps:
   - action: utter_bienvenida_asesorias
-  - action: utter_presentacion_citas
-  - action: agendar_citas
-  - intent: utter_agendar_citas
+  - action: utter_agendar_citas
   - intent: fecha_citas
   - action: utter_fecha_citas
-  - action: confirmar_fecha_citas
-  - intent: utter_confirmar_fecha_citas
   - action: utter_goodbye
 
-
-#- story: info_general_SIC
-#  steps:
-#  - text: utter_bienvenida_info_empresa

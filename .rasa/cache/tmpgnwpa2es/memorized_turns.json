@@ -1,0 +1,14 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "utter_pedir_info",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpZSYUJCaklkUn5mXlo/TmFgAoZpPsQ==": "action_listen",
+    "eJylj0EKwzAMBL/iB/QF/koIwribInDkoMi5GP+9Cuk9kN522WFgpz5eoW+Kg1I2rhJDvwJJWhHDrxTeDeJs26HOsHi1GD4K2LhxNDMoXeg/hg1vVmJZ6kPNzZnTrGvKJ5OrmOOVcmEfMcb8BStfcwA=": "action_listen",
+    "eJylj0EKwzAMBL/iB/QF/kopRribInDkoCg51PjvlUnvgeQkLTuM0LP1R2iLYk+UjavE0I4lCc2I4R8KrwZxdluhzrB4tBg+Clg/cWxm0HSgdwwL3qyJZaoXNSfPDLPOlAeTq5jjNeXCXuKmWkGFv6TuNZ/jRO+vHwopkqk=": "utter_producto_cotizacion",
+    "eJylj1EKwzAIQK+SA+wEucoYIqkdQmqKNf1Y6N1n1sE+W9YvFZ9PvbftFtqstAIm4yIxtD0BwYli+BaZFyNxti6kzrB4aTE8lci2A0c1I4UdvWKYaWAFlrH8qTl4ppt1wtSZVMQcL5Aye5MuqpUw8wvVveaxrzj5s5ahfu74DZ6zP96h4bd7": "action_listen",
+    "eJytj0EKAyEMAL/iA/qC/UopIpouATWSjT1U/Htjt1B6snR7SkImk+Tc+sm0wnCzzgtSXkzbE5tdgsW8ioibQFa2bsDKYNZSFrMygPSJo4oA2x09YigQkC3mK/2omTwzzJycH4ynLIqT9RG1CQfVDC7i3bF6ReNY8eXPTKE+73gP/sM+uTeBUCBb3PqxuV8e+HfYWA==": "utter_metodo_pago_cotizacion",
+    "eJytj1EOwiAMhq/CATzBrmIMIVCXJkBJV3yQ7O4WZ+KTYTqfoOnXr3/PbT2ZVhhu1nlBypNp28dml2AyryLiIpCVrQuwMpi1lMnMDCDrwFFFgO2GHjEUCMgW85V+1AyO6WZOznfGUxbFyfqI2oSDagYX8e5YvaJvX7HzZqZQnzneg/+wD/ImEApki5vp68gfZnfvuDwAGpb/fA==": "utter_confirmacion_cotizacion",
+    "eJytkVEKgzAMhq/SA+wEXmWMUtoogbaRmO5hxbsvnYJPwzl9akP+fP8fcq/zzdSR4WmdF6Tcmbp8bHYJOrMWESeBrNoyAasGs5bSmYEBZN5hFBFgu0jPEEYIyBZzT39idpZpZE7ON42nLCon6yNqE06iGVzEl2Plir7N4sedmUL55NgGr6Dv5E0gFMiObqDDkb/MXuqh5+lxu9Vxk8cbr3snGQ==": "action_listen"
+  }
+}

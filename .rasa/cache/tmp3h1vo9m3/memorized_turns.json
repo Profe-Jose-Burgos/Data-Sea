@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjk/NLMqsSk4EqamtjAQy2GPM=": "utter_realizar_cotizacion",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjk/NLMqsSk4EqaonSWpSamAPUUISiMRYAE4Aveg==": "action_listen",
+    "eJyVjEEKgDAMBL/SB/iCfkWkxDaHQE0lpj1Y+ncDevGmtx2Y2bmPyfVdsAWISoW96/cIDBt6V1VRwkrIDZkShFiUTohmjE+pIGQL5Ef4QKZDkc2tB4o5xIbq3S4l1ajl9bhcUc1POQ==": "utter_producto_cotizacion",
+    "eJyVjkEKgDAMBL/SB/iCfkWkxDaHgKaSpj1Y+ncDevSgt12YWXbuY3L9EGwBolJm7/odAsOO3lVVlLASckOmBCFmpROiEeOTKgibCfJDfMpGRZGNrQXFGGKr6t0hOdWo+feVN/Hb+nIBJrZ0IQ==": "action_listen",
+    "eJytjlEKAjEMRK/SA3iCXkUkxDZIYDcp2XQ/LL27AQV/BF3wbwbeG+Y85imNZrQDFmeVnMYzgOBKOXV3MrgyyU7CFaGo8x1LEPMn1QiXEOyA+CoLb04SbN/IgmGJ6jk109qL6+Ern8R/rH/5+x6ClVyrQsObznl5AB/JlP4=": "utter_metodo_pago_cotizacion",
+    "eJytjkEKwkAMRa8yB/AEcxWRkM4ECbTJkGa6cOjdHVDQhdoW3OXDfz/v3NZTaMVoAUzOKjG0xwGCE8VQ3clgYJKFhDNCUucbpt5Yd6FGOHbADoDPMPLsJL1bZ7LeYenRYyimuSbXwyqfwH+sb/i+hmAi16xQ8Kr7lN+An9bfflzu8cW8Ig==": "utter_registro_metodo_pago",
+    "eJytjmEKwjAMha/SA3iCXkUkxC6MwJaULN0Py+5uQUEF0Q79lwfve/mOdTuEmo1WwOSsEkO9HSA4UwzFnQzOTLKS8ICQ1PmCqTW2LtQIpwbYDvAeJl6cpHXLQtY6LC16DNl0KMl1t8o78B/rX3wfQzCT66CQcdQ+5Sfgo/UvP4zGZm76QnZ/OF0BSqDigg==": "utter_goodbye",
+    "eJytjmEKwjAMha/SA3iCXkUkdG0oga0pWTrQsrtbUJiCaIf7lwfve/nOdT2ZmgUXcF6JkzX1cUByE1pTVFFgIEwLJgoOPCvdnG+NtQsVdGMDZAf4DCPNiql1y4zSOpRaVGuycCheebfKJ/CI9R++2xBMqBwYsovcp/wCfLX+54dgbObCb+ShHyJzGK7YP3q5A/AUA34=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjE4tTi/OLMhOLa2tjAfPEGIo=": "utter_agendar_citas",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjE4tTi/OLMhOLa4nSmZiempeSWBSfnFkC0hILAM27LGo=": "agendar_citas",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjE4tTi/OLMhOLa4nSmZiempeSWBSfnFlCWAua4lgAIGk9tw==": "action_listen",
+    "eJyVjEEKwzAMBL/iB+QF/koIQnW2rSCVg6TkYvL3GkLObW47MLNjO4bUVsNOXEKq5tTOQcof5LRFwOgh0B0qMxM7vJqwH3+V/ILObFQkfif35BMW8YB2d3NYd0Q7Rk5PlDdfT9MXDEVZ3g==": "utter_fecha_citas",
+    "eJyVjkEKwzAMBL/iB/QF/kopQnE2rSBRiqTkYvL3GnzpKU1vuzCz7L0et1Tfhp24hKyaU+2BlBfktEXAaBDoDpWRiR2+mrAfl0x+Qkc2KhK/lf/gXmbxgDZ2c1hjRFuNnCaUF19b6k+/hfO1xwf6Z3eW": "utter_goodbye",
+    "eJyljkEKwzAMBL/iB/QF/kopRrG3qaCVi6QEisnfa/Alt6T0poWZQde2XUJ7K9ZE2blKDG0cSeiFGBZ3aJoYskK4UCKDVWWy7ZRJM6SQpsx+rPwGj/Fkc0hnF4N2hqVPj+GO/KBzpfHpXvi/Ntdapg8OSrcvpRiTzQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4pMyU/PKUvMyUxLjCxILS1NLUotra2MB258YKA==": "action_listen",
+    "eJyFjEEKgDAMBL/SB/iCfkUk1LqHgKa1TXsp/t2AgkdvOzA787gmN3JBpxCVk3g3nkESDnjXVFFoZUiH8BYoh7NBUa+f4ws7V4WY2yqKOSyG6p1R58iJLMzpiy43SwU5MQ==": "utter_servicio_enviopaquetes",
+    "eJyNjssJgDAQRFtJAVaQVkSWqHNY0I0mm1yCvbugVzG3eTC/sV2Da0dCpbAoR/GuPYIk7PCuqCLRzJAK4TXQEc4CRb5+gi9snBVi3pKRzMNiqN4ZVV44khVz7C193nxkuzemG0ntYK0=": "action_listen",
+    "eJytjkEKwzAMBL/iB+QF/koJRnW2IGjk1JZ9Mf57VdxrSA+9aWB2tbc+FtePjBYoKifxrs8jCO3wrqoihztDGoQ3Cge9KhRlXAS/8OSiEHNrQTaHxVC9M2ocOQUr5vRr6Vxzkv3Tj4vhLI+Ud4ofZ8OsHmN9A8lNgKc=": "utter_informacion_de_envio",
+    "eJytjkEOwjAMBL+SB/CCfAUhy6SLZIk6JXFyifp3gsKxqDlw80o74722/eLallCJg0lU79o4SHmFd8UMie4CrVBZmDZ+FRjyfgJ+w1OyQXu3ZKTeEe3RvOupSpBIXSxxVjrW/GD/9ONkuOgjppXDp7NgqOdmH5KT/tsbBh2mBQ==": "utter_confirmacion_de_envio",
+    "eJytjlEKwzAMQ6+SA+wEucoYxktdMKx2lzj5Cb37PLLPjZbRPwmkJ137dgl9zdQAk7FKDH0IEFwohmpGGe5M0kh4QljxWcmobDvFj3lwMRLP1kLZMyxuLQZ3jRMrOJj1KHS8+dE9aWPnOMusecH0zkw00Mduf22eyE8qM/87cHsBElTLxg==": "utter_goodbye",
+    "eJy1jlEKwyAQRK/iAXoCr1KKbHRTFprdVFehSO5ei/lsiR/p3wzMvJlr3S6mrhGLA68kbE3twjEsaE1WxegmQi7IFMCt8MyomLaD4m4elBS5ZXPC2DLEzao1zRXyJK6BSUah/c2P7kkbB8eJZ4kL+E8mYEeP3f7aPJHvhWf658BdJEwvHEXe3lDM69A=": "action_listen",
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "utter_pedir_info",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpZSYUJCaklkUn5mXlo/TmFgAoZpPsQ==": "action_capturar_info_cliente",
+    "eJylzMEJgDAQRNFWUoAVpBWRJcRRFnQN68ZLsHcD8SqC3ubD8Ppydq4kxUEhGm/iXWmDJKzw7o6Fd4PUb96h9cNS07ybFbDzxchmUGrXP0LCyEos0/aRuSOGZFlDoyguXAU8ksMFrbxvpg==": "action_listen",
+    "eJylkMEJwzAMRVfxAJ3Aq5QihKsGQSIbRe7FePcocaCnUmhuevB4H3Rv/RZaUXoDJuMsMbRxgOBCMZww82ok7taV1B0WR4thUiLrPxrVjBSGeqVQ6MkKLK/8Z+aEhMWq4khBmtkLdC357T/7gi6Yjtks5vpnsT82lD2S9Q==": "action_listen"
+  }
+}

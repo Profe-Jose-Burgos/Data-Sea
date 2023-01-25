@@ -111,8 +111,11 @@ responses:
   utter_metodo_pago_cotizacion:
   - text: "Manejamos cobros mediante visa y tarjeta clave. No aceptamos pagos en cheques o Transferencias de bancos no reconocidos internacionalmente"
 
+
   utter_registro_metodo_pago:
   - text: "Excelente, en breve recibira la informacion para realizar de pago en su correo"
+
+
 
   utter_bienvenida_paquetes:
   - text: "A continuacion te ayudare con la gestion de tu paquete"
@@ -120,48 +123,24 @@ responses:
   utter_bienvenida_asesorias:
   - text: "A Continuacion te ayudare a registrar una asesoria con nuestros colaboradores"
 
-  utter_bienvenida_info_empresa:
-  - text: "¿Que te gustaria saber sobre nosotros?"
-
-  ## RESPUESTAS ENVIO DE PAQUETES
-
   utter_servicio_enviopaquetes:
-  - text: "Hola, si contamos con el servicio de envio de paquetes"
+  - text: "Si contamos con ese servicio, ¿De que tamaño es el envio a realizar?"
 
   utter_tiposervicio_enviopaquetes:
   - text: "Contamos con todo tipo de envios: envio a domicilio, a un punto de entrega, express, internacional o nacional. Puede realizar su pedido escribiendo hacia donde lo quiere transportar, peso y volumen en metros cúbicos"
 
   utter_informacion_de_envio:
-  - text: "¡Listo! Información recibida. Sus datos han sido recibidos y se hara una cotizacion. ¿Desea proceder con el envio?"
-
-  utter_confirmacion_costoenvios:
-  - text: "Su envio fue realizado con exito.  ¿desea continuar con el envio?"
- 
+  - text: "Listo, su solicitud sera procesada y se enviara toda la información para concretar el envio a su correo"
 
   utter_confirmacion_de_envio:
-  - text: "Excelente, su número de seguimiento es el 02311553. La fecha estimada de entrega puede ser entre 3 a 4 días hábiles"
+  - text: "Su número de seguimiento es el 02311553. La fecha estimada de entrega puede ser entre 3 a 4 días hábiles una vez concretado todo"
 
-  utter_estado_del_envio:
-  - text: "Esta en la informacion actualizada el tiempo y la fecha de entrega puede variar por su region., ¿necesita algun otro servicio o ayuda adicional?"
-
-  utter_presentacion_citas:
-   - text: "¡Hola, Bienvenido! Soy un chatbot y estoy preparado para ayudarte.¿ Requieres ayuda para agendar una cita?"
 
   utter_agendar_citas:
-   - text: "¡Perfecto! podemos recomendarte los siguientes horarios:
-          horario 1) jueves a las 1 pm,
-          horario 2) viernes a las 2pm,
-          horario 3) lunes a las 10am,
-          ¿Cuál deseas elegir?"
+   - text: "Tenemos los siguientes horarios para la asesoria: Horario 1, Horario 2 y Horario 3"
 
-  utter_fecha_citas:
-   - text: "¡Bien!, ¿Quieres confirmar esta cita?."
-
-  utter_confirmar_fecha_citas:
-   - text: "¡Enhorabuena! Tu cita ha sido agendada con éxito. Te esperamos el día de la reunión en nuestra sucursal de Via España al horario establecido."
-
-  utter_negacion_fecha_citas:
-   - text: "¿Deseas terminar esta conversación?"
+  utter_fecha_citas: 
+  - text: "Tu solicitud sera procesada y recibiras la información necesaria en tu correo"
 
 
 actions:

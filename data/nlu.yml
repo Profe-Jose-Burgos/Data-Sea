@@ -54,8 +54,6 @@ nlu:
     - envielo a esta residencia [Calle 10, casa 44](direccion)
 
 #termina datos de entrenamiento para reconcer entidades
-
-
 - intent: greet
   examples: |
     - hola
@@ -122,24 +120,19 @@ nlu:
    - ¿cuentan con servicio de envio de paquetes?
    - ¿ofrecen envio de paquetes?
    - ¿tienen servicio de envio de paquetes?
+   - quiero enviar un paquete, pueden hacerlo?
+   - hacen envios?
 
 
-- intent: tiposervicio_enviopaquetes
-  examples: |
-    - ¿que tipo de servicio de  envio de paquetes  tienen?
-    - ¿con que tipo de servicio de envio cuentan?
-    - ¿cuales son los tipo de servicio que ofrecen?
 
 - intent: informacion_de_envio
   examples: |
-   - hacia panama con 100 libras y  30 metros cubicos
-   - hacia panama con 12 libras y  50 metros cubicos
-   - hacia panama con 200 libras y  21 metros cubicos
-   - hacia costa rica con 3450 libras y  23 metros cubicos
-   - hacia venezuela con 1200 libras y  432 metros cubicos
-   - hacia colombia con 1030 libras y  53 metros cubicos
-   - hacia peru con 20 libras y  21 metros cubicos
-   - hacia estados unidos con 500 libras y  500 metros cubicos
+   - quiero realizar un envio grande
+   - quiero realizar un envio pequeño
+   - quiero realizar un envio mediano
+   - quiero un envio grande
+   - quiero un envio pequeño
+   - quiero un envio mediano
    
 - intent: confirmacion_costoenvios
   examples: |
@@ -157,32 +150,11 @@ nlu:
 
 ## INTENTS CITAS DE ASESORIAS
 
-- intent: agendar_citas
-  examples: |
-    - quiero cita
-    - si cita
-    - si
-    - ¿Podemos agendar una cita?
-    - Me gustaria agendar una cita
-    - ¿Me puede decir que servicios manejan?
-    - ¿Tiene disponibilidad?
-    - ¿Tiene espacio en su agenda?
-    - Me gustarpia tener una cita
-    - ¿Podemos acordar una reunión?
-    - Quiero poder explicarle bien mi proyecyo
-    - Me gustaria brindarle más información de mi proyecyo
-    - ¿Podemos acordar un día para reunirnos?
-    - Estoy interesado en saber más
-    - Preferiría reunirnos para darle más detalles
-    - ¿Podemos reunirnos para darle los detalles?
-
-
 - intent: fecha_citas
   examples: |
     - horario 1
     - horario 2
     - horario 3
-
 
 - intent: confirmar_fecha_citas
   examples: |
@@ -195,7 +167,6 @@ nlu:
     - confirmar
     - confirmo
     - listo
-
 
 - intent: negacion_fecha_citas
   examples: |
